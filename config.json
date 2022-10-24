@@ -1,0 +1,7 @@
+{
+  "url-backend": "127.0.0.1",
+  "port": 8888,
+
+  "data-db-connection": "mongodb+srv://darwin-pruebas:samidj303@cluster0.k7b98ia.mongodb.net/?retryWrites=true&w=majority" ,
+  "name-db": "bd-sistema-votacion"
+}
