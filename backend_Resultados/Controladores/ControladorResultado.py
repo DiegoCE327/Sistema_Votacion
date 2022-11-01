@@ -61,6 +61,12 @@ class ControladorResultado():
     def listarResultadosPorCandidato(self, id_candidato):
         return self.repositorioResultado.getListadoResultadosPorCandidato(id_candidato)
 
+    """
+    Obtener los resultados por candidato y mesa
+    """
+    def ResultadosPorCandidatoPorMesa(self, id_candidato, id_mesa):
+        return self.repositorioResultado.getResultadoPorCandidatoPorMesa(id_candidato, id_mesa)
+
 
     """
     Obtener mayor numero de votos por candidato
