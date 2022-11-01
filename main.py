@@ -178,9 +178,14 @@ def eliminarResultado(id_resultado):
 
 @app.route("/resultados/candidato/<string:id_candidato>",methods=['GET'])
 def resultadosPorCandidato(id_candidato):
-    json=miControladorResultado.listarResultadosPorCandidato(id_candidato)
+    json= miControladorResultado.listarResultadosPorCandidato(id_candidato)
     return jsonify(json)
 
+
+@app.route("/resultados/candidato/<string:id_candidato>/mesa/<string:id_mesa>", methods=['GET'])
+def resultadosPorCandidatoPorMesa(id_candidato, id_mesa):
+        json= miControladorResultado.ResultadosPorCandidatoPorMesa(id_candidato, id_mesa)
+        return jsonify(json)
 
 @app.route("/resultados/mayores_votaciones",methods=['GET'])
 def getMayorNumeroVotos():
