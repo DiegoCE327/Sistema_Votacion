@@ -1,13 +1,13 @@
-package com.backendseguridad;
+package Votaciones.ModuloSeguridad;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class BackendSeguridadApplication {
+public class ModuloSeguridadApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(BackendSeguridadApplication.class, args);
+		SpringApplication.run(ModuloSeguridadApplication.class, args);
 	}
 
 }
