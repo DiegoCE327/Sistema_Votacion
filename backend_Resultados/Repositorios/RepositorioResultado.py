@@ -10,6 +10,12 @@ class RepositorioResultado(InterfaceRepositorio[Resultado]):
         theQuery = {"candidato.$id": ObjectId(id_candidato)}
         return self.query(theQuery)
 
+    def getResultadoPorCandidatoPorMesa(self, id_candidato, id_mesa):
+        theQuery = {'candidato.$id': ObjectId(id_candidato), 'mesa.$id': ObjectId(id_mesa)}
+        return self.query(theQuery)
+
+
+
     def getMayorNumeroVotosPorCandidato(self):
         query1 = {
             "$group": {
