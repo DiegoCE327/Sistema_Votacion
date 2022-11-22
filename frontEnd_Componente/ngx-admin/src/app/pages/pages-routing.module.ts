@@ -21,6 +21,11 @@ const routes: Routes = [{
       .then(m => m.MesasModule),
     },
     {
+      path: 'partidos',
+      loadChildren: () => import('./partidos/partidos.module')
+      .then(m => m.PartidosModule),
+    },
+    {
       path: 'dashboard',
       component: ECommerceComponent,
     },
