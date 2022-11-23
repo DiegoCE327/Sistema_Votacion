@@ -25,6 +25,13 @@ const routes: Routes = [{
       loadChildren: () => import('./partidos/partidos.module')
       .then(m => m.PartidosModule),
     },
+
+    {
+      path: 'candidatos',
+      loadChildren: () => import('./candidatos/candidatos.module')
+      .then(m => m.CandidatosModule), 
+    },
+
     {
       path: 'dashboard',
       component: ECommerceComponent,
