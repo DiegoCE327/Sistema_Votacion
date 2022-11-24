@@ -33,6 +33,12 @@ const routes: Routes = [{
     },
 
     {
+      path: 'resultados',
+      loadChildren: () => import('./resultados/resultados.module')
+      .then(m => m.ResultadosModule), 
+    },
+
+    {
       path: 'dashboard',
       component: ECommerceComponent,
     },
